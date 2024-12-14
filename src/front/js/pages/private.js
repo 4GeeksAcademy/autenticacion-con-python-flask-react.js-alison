@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 
-export const Home = () => {
+export const Private = () => {
 	const { store, actions } = useContext(Context);
 	const [user, setUser] = useState(null);
     const [error, setError] = useState("");
@@ -54,7 +53,7 @@ export const Home = () => {
 		<div className="text-center mt-5">
 			<h1>Hello {user.name}!!</h1>
 			<p>
-				<img src={rigoImageUrl} />
+				<img src={classified} />
 			</p>
 			<div className="alert alert-info">
 				{store.message || "Loading message from the backend (make sure your python backend is running)..."}

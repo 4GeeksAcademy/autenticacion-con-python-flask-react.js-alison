@@ -22,7 +22,7 @@ static_file_dir = os.path.join(os.path.dirname(
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-CORS(app, origins=["https://verbose-space-doodle-7vrxv7q4qrw5fxx9r-3001.app.github.dev/"])
+CORS(app, origins=["https://verbose-cod-4jgrjq494w9rfjxv7-3001.app.github.dev/"])
 
 app.config["JWT_SECRET_KEY"] = "ThisIsCool"  # Change this!
 jwt = JWTManager(app)
