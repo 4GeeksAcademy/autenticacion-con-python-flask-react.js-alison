@@ -36,9 +36,9 @@ export const Login = () => {
     return (
         <div className="container">
             {error && <p style={{ color: "red" }}>{error}</p>}
-            <main className="form-signin w-100 m-auto">
+            <main className="form-signin w-50 m-auto">
             <form onSubmit={handleSubmit}>
-                <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+                <h1 className="h3 mb-3 fw-normal">Iniciar Sesión</h1>
 
                 <div className="form-floating">
                 <input

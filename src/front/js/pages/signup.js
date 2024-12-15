@@ -39,9 +39,9 @@ export const Signup = () => {
     return (
         <div className="container">
             {message && <p style={{ color: message.includes("success") ? "green" : "red" }}>{message}</p>}
-            <main className="form-signin w-100 m-auto">
+            <main className="form-signin w-50 m-auto">
             <form onSubmit={handleSubmit}>
-                <h1 className="h3 mb-3 fw-normal">Sign Up</h1>
+                <h1 className="h3 mb-3 fw-normal">Registrate</h1>
                 <div className="form-floating">
                 <input
                         id="name"
@@ -79,7 +79,7 @@ export const Signup = () => {
                 <label htmlFor="password" className="form-label">Password</label>
                 </div>
 
-                <button className="btn btn-primary w-100 py-2" type="submit">Ingresar</button>
+                <button className="btn btn-primary w-100 py-2" type="submit">Registrarse</button>
                 <div className="mt-3">
                         <Link to="/login">Ya tienes una cuenta? Iniciar sesión</Link>
                     </div>
